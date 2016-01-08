@@ -1,0 +1,23 @@
+{
+  "name": "runmapper",
+  "version": "0.0.1",
+  "description": "Webapp to map my runs.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljustin/runmapper.git"
+  },
+  "author": "Justin Lee <ljustin8925@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ljustin/runmapper/issues"
+  },
+  "homepage": "https://github.com/ljustin/runmapper#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.2"
+  }
+}
