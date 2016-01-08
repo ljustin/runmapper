@@ -1,0 +1,21 @@
+{
+  "name": "runmapper",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ljustin/runmapper",
+  "authors": [
+    "Joonho Lee <ljustin8925@yahoo.com>"
+  ],
+  "description": "Webapp to map my runs.",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.8"
+  }
+}
