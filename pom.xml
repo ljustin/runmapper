@@ -16,6 +16,52 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>runmapper</finalName>
+     <finalName>runmapper</finalName>
+    <plugins>
+       <plugin>
+           <groupId>com.github.eirslett</groupId>
+           <artifactId>frontend-maven-plugin</artifactId>
+           <version>0.0.27</version>
+           <executions>
+                    <execution>
+                        <id>install node and npm</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                        <configuration>
+                            <nodeVersion>v0.12.2</nodeVersion>
+                            <npmVersion>2.7.6</npmVersion>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm install</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>bower install</id>
+                        <goals>
+                            <goal>bower</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>grunt build</id>
+                        <goals>
+                            <goal>grunt</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>--no-color</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+        </plugin>
+   </plugins>
   </build>
 </project>
