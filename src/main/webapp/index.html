@@ -5,12 +5,25 @@
 	<title>Run Mapper</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
+    <link rel="stylesheet" href="scripts/bower_components/bootstrap/dist/css/bootstrap.min.css"></link>
 </head>
 <body ng-app="runMapperApp">
-	<div ng-controller="testCtrl">
-		{{message}}
-	</div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <ul class="nav nav-tabs nav-justified">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Routes</a></li>
+          <li role="presentation"><a href="#">Stats</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div ng-controller="testCtrl">
+            {{message}}
+    </div>
 	<script src="scripts/bower_components/angular/angular.js"></script>
+    <script src="scripts/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="scripts/app.js"></script>
 </body>
 </html>
